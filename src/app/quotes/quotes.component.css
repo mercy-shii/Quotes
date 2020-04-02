@@ -1,0 +1,15 @@
+.myQuotes{
+
+    padding: 15px;
+    font-size: large;
+    font-family: italics;
+}
+.container-fluid{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+.container{
+    font-size: large;
+
+}

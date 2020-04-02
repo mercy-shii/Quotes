@@ -1,0 +1,29 @@
+<link href="quotes.component.css">
+<div class="container-fluid">
+    <h1>QUOTES</h1>
+    <img src="../assets/images/3_1.jpg" width="700" height="400">
+</div>
+<app-form (emitQuotes)="addQuotes($event)"></app-form>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <br>
+            <div class="myQuotes" *ngFor="let quotes of quotes; let i=index">
+                <p appHighlight *ngIf="highestupvote()===quotes.upvotes && quotes.upvotes>0">{{quotes.quotes}}</p>
+                <p *ngIf="highestupvote()!==quotes.upvotes || quotes.upvotes==0">{{quotes.quotes}}</p>
+                <app-details [quotes]="quotes"></app-details>
+
+                <button class="btn btn-primary" (click)="upvote(i)">Upvote</button>
+
+                <button class="btn btn-success" (click)="downvote(i)">Downvote</button>
+
+                <button class="btn btn-danger"(click)="delQuotes(i)">Delete</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
