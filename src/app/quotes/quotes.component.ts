@@ -9,7 +9,7 @@ import { Quotes } from '../quotes'
 export class QuotesComponent implements OnInit {
   quotes=[new Quotes("Walter","Walter Hagan","'You're only here for a short visit.Don't hurry,dont worry.And be sure to smell the flowers along the way.'"),
   new Quotes("Eleaner","Eleaner Roosevelt","'If life was predictable it would cease to be life,And Be without Flavour'"),
-  new Quotes("Trump","'Sometimes by losing a battle you fing  ")
+  new Quotes("Trump","'Sometimes by losing a battle you find  ")
 ]
   preNum:number
   lastNum:number
